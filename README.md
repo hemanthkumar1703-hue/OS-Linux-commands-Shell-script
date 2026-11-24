@@ -291,23 +291,28 @@ seq 10 | sed -n '2,~4p'
 seq 3 | sed '2a hello'
 ## OUTPUT
 
+<img width="891" height="94" alt="437490895-805a4134-3397-4783-be68-6d1d061c650c" src="https://github.com/user-attachments/assets/2c616457-9311-42f0-b011-0028e86f5d77" />
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+<img width="890" height="82" alt="437490965-c59f4705-58a5-47ff-b223-06733cbcb06e" src="https://github.com/user-attachments/assets/39e2c059-3fc0-477c-a93a-5e798d57d8fd" />
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
+<img width="910" height="80" alt="437491048-9395f677-52f8-4f75-b137-adcc767a2519" src="https://github.com/user-attachments/assets/4a6380d3-db68-4cc6-8031-f21055537206" />
 
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
+<img width="954" height="76" alt="437491145-4f70c8ec-cc80-47a2-8095-4215f0fa18f2" src="https://github.com/user-attachments/assets/a088edaf-dafb-44e0-b629-5faffb3f132f" />
 
 
 
 sed -n '2,4{s/$/*/;p}' file23
 
+<img width="954" height="76" alt="437491231-da603a99-e502-4770-8fc3-bb2ad1a032db" src="https://github.com/user-attachments/assets/3f265dc8-02f4-4223-95cf-4fb65c0ecd6b" />
 
 #Sorting File content
 cat > file21
@@ -320,6 +325,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+<img width="796" height="112" alt="437493282-66fa5f6e-5852-46e9-b870-b38b84b512e6" src="https://github.com/user-attachments/assets/c1efcb66-5808-4573-aa22-4bde0c4e7432" />
 
 
 cat > file22
@@ -334,12 +340,14 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+<img width="796" height="112" alt="437493372-787b56a3-f849-4513-a704-237e72aa2ac6" src="https://github.com/user-attachments/assets/85160bf8-9790-4155-bc86-cb2e0e65d72f" />
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+<img width="1006" height="169" alt="437493522-2381e510-0bf0-4450-bc39-de38ea034bb9" src="https://github.com/user-attachments/assets/d13b076b-948b-46fb-9aa0-c3a70b2fd85e" />
 
 cat < urllist.txt
 ```
@@ -356,17 +364,20 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
+<img width="947" height="75" alt="437494744-098afbcc-076c-4f85-b9d6-c51cf0fb0d46" src="https://github.com/user-attachments/assets/a6a6da1b-7011-4599-a2df-b3698ca07cb6" />
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+<img width="1055" height="76" alt="437493789-62e2fa63-7f75-481d-b9b0-cbd070534217" src="https://github.com/user-attachments/assets/8a18761f-f452-465e-a68b-7a3534407160" />
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+<img width="892" height="363" alt="437493876-c28c08b3-4839-4fa5-af49-da520d25b9f4" src="https://github.com/user-attachments/assets/c712d47b-d7d5-4c77-92c0-4c0f718d7a0e" />
 
 
 mkdir backupdir
@@ -378,17 +389,21 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+<img width="967" height="1001" alt="437493953-95ee4d5e-81f5-46aa-b221-9d84cf353090" src="https://github.com/user-attachments/assets/95bd63e3-61b3-4bec-8667-9f26fbc3e048" />
 
 tar -xvf backup.tar
 ## OUTPUT
+<img width="967" height="1001" alt="437495171-a3ea4426-447a-423d-b238-37cfd64a32c2" src="https://github.com/user-attachments/assets/530ae9df-23ee-48ee-8fc7-ea9d9b810710" />
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ <img width="861" height="44" alt="437495364-0f4f0e96-53c3-4e67-ae22-3ff83d31cdad" src="https://github.com/user-attachments/assets/5b4970a7-65cd-49b6-a35a-be31b04bcbb7" />
+
 gunzip backup.tar.gz
 ## OUTPUT
+<img width="1662" height="279" alt="437495471-1545a8ab-15b6-4fea-b67c-d6778656d289" src="https://github.com/user-attachments/assets/342079b6-d998-49b5-83ac-6f6ded92754e" />
 
  
 # Shell Script
@@ -400,7 +415,8 @@ chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
 
- 
+ <img width="1110" height="134" alt="437497627-2cb093bc-b1c0-4927-9f44-8648e99bdee7" src="https://github.com/user-attachments/assets/12270336-1c9d-46aa-87af-d3f5290842d1" />
+
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -411,6 +427,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+<img width="942" height="161" alt="437508416-6503d8ea-f020-4a33-bc54-d80d3bc44a30" src="https://github.com/user-attachments/assets/55ce85f4-d26c-442d-8529-3ab44ddc7555" />
 
 
 cat < scriptest.sh 
@@ -449,26 +466,31 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+<img width="901" height="507" alt="437508957-5eb11545-912f-44d6-bff7-fbc0cfbe09fe" src="https://github.com/user-attachments/assets/ad975d24-444d-4307-a0be-fccdcee76f46" />
 
  
 ls file1
 ## OUTPUT
+<img width="773" height="35" alt="437509029-8e0c0b06-7fa2-404f-8f27-57da942b2b3f" src="https://github.com/user-attachments/assets/8b6404e6-10e8-4491-88ed-bceab793e0bd" />
 
 echo $?
 ## OUTPUT 
 ./one
 bash: ./one: Permission denied
- 
+ <img width="773" height="35" alt="437509029-8e0c0b06-7fa2-404f-8f27-57da942b2b3f" src="https://github.com/user-attachments/assets/7211a6d2-2e08-4dcb-b1d9-fa7cf6118188" />
+
 
 echo $?
 ## OUTPUT 
- 
+ <img width="773" height="45" alt="437509313-fa3cc91f-4dc8-4c9c-b285-58fe15eead88" src="https://github.com/user-attachments/assets/04bec130-b537-4766-8eef-9c749d0ddd89" />
+
 abcd
  
 echo $?
  ## OUTPUT
 
 
+<img width="769" height="185" alt="437509663-f01acb5d-8c5e-4542-8978-82bfef0a3ea5" src="https://github.com/user-attachments/assets/5f11c6f0-dfd9-463f-80f7-7ddefc698265" />
 
 
 
